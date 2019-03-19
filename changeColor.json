@@ -1,0 +1,33 @@
+{
+  "BTTWidgetName" : "Change color",
+  "BTTTriggerType" : 639,
+  "BTTTriggerTypeDescription" : "Apple Script Widget",
+  "BTTTriggerClass" : "BTTTriggerTypeTouchBar",
+  "BTTPredefinedActionType" : 172,
+  "BTTPredefinedActionName" : "Run Apple Script (blocking)",
+  "BTTInlineAppleScript" : "tell application \"BetterTouchTool\"\r\tset x to get_string_variable \"color\"\r\tif (x = \"255,255,255,255\") then\r\t\tupdate_touch_bar_widget \"398C8FC7-EB6C-452B-9981-1797BA91B528\" background_color \"255,255,255,255\"\r\t\tset_string_variable \"color\" to \"255,255,255,50\"\r\t\treturn \"LIGHT\"\r\telse\r\t\tupdate_touch_bar_widget \"398C8FC7-EB6C-452B-9981-1797BA91B528\" background_color \"255,255,255,50\"\r\t\tset_string_variable \"color\" to \"255,255,255,255\"\r\t\treturn \"DARK\"\r\tend if\r\t\rend tell",
+  "BTTEnabled2" : 1,
+  "BTTUUID" : "398C8FC7-EB6C-452B-9981-1797BA91B528",
+  "BTTEnabled" : 1,
+  "BTTModifierMode" : 0,
+  "BTTOrder" : 4,
+  "BTTDisplayOrder" : 0,
+  "BTTMergeIntoTouchBarGroups" : 0,
+  "BTTTriggerConfig" : {
+    "BTTScriptType" : 0,
+    "BTTTouchBarButtonColor" : "0.000000, 195.244232, 0.000000, 255.000000",
+    "BTTTouchBarItemIconWidth" : 22,
+    "BTTTouchBarItemPlacement" : 0,
+    "BTTTouchBarAlternateBackgroundColor" : "128.829533, 128.829533, 128.829533, 255.000000",
+    "BTTTouchBarButtonCornerRadius" : 6,
+    "BTTTouchBarFontColor" : "0.000000, 0.000000, 0.000000, 255.000000",
+    "BTTTouchBarScriptUpdateInterval" : 0,
+    "BTTTouchBarAppleScriptString" : "tell application \"BetterTouchTool\"\r\tset_string_variable \"color\" to \"255,255,255,255\"\rend tell",
+    "BTTTouchBarAppleScriptStringRunOnInit" : false,
+    "BTTTouchBarButtonName" : "Change color",
+    "BTTTouchBarAppleScriptUsePath" : 0,
+    "BTTTouchBarFreeSpaceAfterButton" : 5,
+    "BTTTouchBarItemIconHeight" : 22,
+    "BTTTouchBarItemPadding" : 0
+  }
+}

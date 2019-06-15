@@ -6,7 +6,8 @@ This file is set of triggers that will set up a new template project in atom fro
 For this button to work, you need to make sure that Terminal, Script Editor and BetterTouchTool have Accessibility permission. 
 
 To do this, go to:
->System Preferences > Security & Privacy > Accessibility then make sure that Terminal, Script Editor and BetterTouchTool are checked
+>System Preferences > Security & Privacy > Accessibility
+>Then make sure that Terminal, Script Editor and BetterTouchTool are checked
 
 ## Usage
 1. Open up a new project folder in atom so it will show up in the tree view.

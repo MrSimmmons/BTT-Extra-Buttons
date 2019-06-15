@@ -7,6 +7,7 @@ For this button to work, you need to make sure that Terminal, Script Editor and 
 
 To do this, go to:
 >System Preferences > Security & Privacy > Accessibility
+>
 >Then make sure that Terminal, Script Editor and BetterTouchTool are checked
 
 ## Usage

@@ -1,7 +1,7 @@
 {
   "BTTPresetName" : "atomNewProject",
   "BTTPresetColor" : "53.319480, 1.129650, 112.965000, 255.000000",
-  "BTTPresetUUID" : "6A99C3FD-D9B9-4120-BF62-26D924983E60",
+  "BTTPresetUUID" : "8D51498D-3644-4FFD-8D07-EDA8DA9FCFD4",
   "BTTPresetContent" : [
     {
       "BTTAppBundleIdentifier" : "BT.G",
@@ -10,96 +10,11 @@
       "BTTTriggers" : [
         {
           "BTTTriggerType" : 643,
-          "BTTTriggerTypeDescription" : "Named Trigger: makeHTML",
-          "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
-          "BTTPredefinedActionType" : 246,
-          "BTTPredefinedActionName" : "Execute Terminal Command (Synchronous, blocking)",
-          "BTTTerminalCommand" : "IFS=\ncode=`pbpaste`\nosascript -e 'tell application \"System Events\" to keystroke \"c\" using {control down, shift down}'\ncd `pbpaste`\necho $code > index.html",
-          "BTTTriggerName" : "makeHTML",
-          "BTTEnabled2" : 1,
-          "BTTAlternateModifierKeys" : 0,
-          "BTTUUID" : "38899AD0-480E-4A5B-85EB-5CC0EB7EA86B",
-          "BTTNotesInsteadOfDescription" : 0,
-          "BTTEnabled" : 1,
-          "BTTModifierMode" : 0,
-          "BTTOrder" : 3,
-          "BTTDisplayOrder" : 0
-        },
-        {
-          "BTTTriggerType" : 643,
-          "BTTTriggerTypeDescription" : "Named Trigger: makeSCSS",
-          "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
-          "BTTPredefinedActionType" : 246,
-          "BTTPredefinedActionName" : "Execute Terminal Command (Synchronous, blocking)",
-          "BTTTerminalCommand" : "cd `pbpaste`\nmkdir scss\ncd scss\nprintf \"* {\n\tmargin: 0;\n\tpadding: 0;\n\tbox-sizing: border-box;\n\tfont-family: 'Roboto', sans-serif;\n}\" > main.scss",
-          "BTTTriggerName" : "makeSCSS",
-          "BTTEnabled2" : 1,
-          "BTTAlternateModifierKeys" : 0,
-          "BTTUUID" : "05A93916-86FF-4DF5-8C1D-0255214F6867",
-          "BTTNotesInsteadOfDescription" : 0,
-          "BTTEnabled" : 1,
-          "BTTModifierMode" : 0,
-          "BTTOrder" : 1,
-          "BTTDisplayOrder" : 0,
-          "BTTAdditionalActions" : [
-            {
-              "BTTTriggerType" : -1,
-              "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
-              "BTTPredefinedActionType" : 195,
-              "BTTPredefinedActionName" : "Run Apple Script (async in background)",
-              "BTTInlineAppleScript" : "return \"done\"",
-              "BTTEnabled2" : 1,
-              "BTTAlternateModifierKeys" : 0,
-              "BTTUUID" : "E0FA83F6-AAA9-4993-B8F7-2DC20CBDF542",
-              "BTTNotesInsteadOfDescription" : 0,
-              "BTTEnabled" : 1,
-              "BTTModifierMode" : 0,
-              "BTTOrder" : 0,
-              "BTTDisplayOrder" : 0
-            }
-          ]
-        },
-        {
-          "BTTTriggerType" : 643,
-          "BTTTriggerTypeDescription" : "Named Trigger: makeJS",
-          "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
-          "BTTPredefinedActionType" : 246,
-          "BTTPredefinedActionName" : "Execute Terminal Command (Synchronous, blocking)",
-          "BTTTerminalCommand" : "cd `pbpaste`\nmkdir js\ncd js\nprintf \"console.log('JS has loaded');\" > main.js",
-          "BTTTriggerName" : "makeJS",
-          "BTTEnabled2" : 1,
-          "BTTAlternateModifierKeys" : 0,
-          "BTTUUID" : "8E2B665D-1D6C-4304-B535-B831229CA5BF",
-          "BTTNotesInsteadOfDescription" : 0,
-          "BTTEnabled" : 1,
-          "BTTModifierMode" : 0,
-          "BTTOrder" : 2,
-          "BTTDisplayOrder" : 0,
-          "BTTAdditionalActions" : [
-            {
-              "BTTTriggerType" : -1,
-              "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
-              "BTTPredefinedActionType" : 195,
-              "BTTPredefinedActionName" : "Run Apple Script (async in background)",
-              "BTTInlineAppleScript" : "return \"done\"",
-              "BTTEnabled2" : 1,
-              "BTTAlternateModifierKeys" : 0,
-              "BTTUUID" : "2E3E99CB-30F7-486E-9B39-3BCCAD8C54F5",
-              "BTTNotesInsteadOfDescription" : 0,
-              "BTTEnabled" : 1,
-              "BTTModifierMode" : 0,
-              "BTTOrder" : 0,
-              "BTTDisplayOrder" : 0
-            }
-          ]
-        },
-        {
-          "BTTTriggerType" : 643,
           "BTTTriggerTypeDescription" : "Named Trigger: makeCSS",
           "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
           "BTTPredefinedActionType" : 246,
           "BTTPredefinedActionName" : "Execute Terminal Command (Synchronous, blocking)",
-          "BTTTerminalCommand" : "cd `pbpaste`\nmkdir css\ncd css\nprintf \"* {\n\tmargin: 0;\n\tpadding: 0;\n\tbox-sizing: border-box;\n\tfont-family: 'Roboto', sans-serif;\n}\" > main.css",
+          "BTTTerminalCommand" : "cd \"`pbpaste`\"\nmkdir css\ncd css\nprintf \"* {\n\tmargin: 0;\n\tpadding: 0;\n\tbox-sizing: border-box;\n\tfont-family: 'Roboto', sans-serif;\n}\" > main.css",
           "BTTTriggerName" : "makeCSS",
           "BTTEnabled2" : 1,
           "BTTAlternateModifierKeys" : 0,
@@ -129,11 +44,45 @@
         },
         {
           "BTTTriggerType" : 643,
+          "BTTTriggerTypeDescription" : "Named Trigger: makeSCSS",
+          "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
+          "BTTPredefinedActionType" : 246,
+          "BTTPredefinedActionName" : "Execute Terminal Command (Synchronous, blocking)",
+          "BTTTerminalCommand" : "cd \"`pbpaste`\"\nmkdir scss\ncd scss\nprintf \"* {\n\tmargin: 0;\n\tpadding: 0;\n\tbox-sizing: border-box;\n\tfont-family: 'Roboto', sans-serif;\n}\" > main.scss",
+          "BTTTriggerName" : "makeSCSS",
+          "BTTEnabled2" : 1,
+          "BTTAlternateModifierKeys" : 0,
+          "BTTUUID" : "05A93916-86FF-4DF5-8C1D-0255214F6867",
+          "BTTNotesInsteadOfDescription" : 0,
+          "BTTEnabled" : 1,
+          "BTTModifierMode" : 0,
+          "BTTOrder" : 1,
+          "BTTDisplayOrder" : 0,
+          "BTTAdditionalActions" : [
+            {
+              "BTTTriggerType" : -1,
+              "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
+              "BTTPredefinedActionType" : 195,
+              "BTTPredefinedActionName" : "Run Apple Script (async in background)",
+              "BTTInlineAppleScript" : "return \"done\"",
+              "BTTEnabled2" : 1,
+              "BTTAlternateModifierKeys" : 0,
+              "BTTUUID" : "E0FA83F6-AAA9-4993-B8F7-2DC20CBDF542",
+              "BTTNotesInsteadOfDescription" : 0,
+              "BTTEnabled" : 1,
+              "BTTModifierMode" : 0,
+              "BTTOrder" : 0,
+              "BTTDisplayOrder" : 0
+            }
+          ]
+        },
+        {
+          "BTTTriggerType" : 643,
           "BTTTriggerTypeDescription" : "Named Trigger: makePHP",
           "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
           "BTTPredefinedActionType" : 246,
           "BTTPredefinedActionName" : "Execute Terminal Command (Synchronous, blocking)",
-          "BTTTerminalCommand" : "IFS=\ncode=`pbpaste`\nosascript -e 'tell application \"System Events\" to keystroke \"c\" using {control down, shift down}'\ncd `pbpaste`\necho $code > index.php",
+          "BTTTerminalCommand" : "IFS=\ncode=`pbpaste`\nosascript -e 'tell application \"System Events\" to keystroke \"c\" using {control down, shift down}'\ncd \"`pbpaste`\"\necho $code > index.php",
           "BTTTriggerName" : "makePHP",
           "BTTEnabled2" : 1,
           "BTTAlternateModifierKeys" : 0,
@@ -143,7 +92,66 @@
           "BTTModifierMode" : 0,
           "BTTOrder" : 4,
           "BTTDisplayOrder" : 0
+        },
+        {
+          "BTTTriggerType" : 643,
+          "BTTTriggerTypeDescription" : "Named Trigger: makeJS",
+          "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
+          "BTTPredefinedActionType" : 246,
+          "BTTPredefinedActionName" : "Execute Terminal Command (Synchronous, blocking)",
+          "BTTTerminalCommand" : "cd \"`pbpaste`\"\nmkdir js\ncd js\nprintf \"console.log('JS has loaded');\" > main.js",
+          "BTTTriggerName" : "makeJS",
+          "BTTEnabled2" : 1,
+          "BTTAlternateModifierKeys" : 0,
+          "BTTUUID" : "8E2B665D-1D6C-4304-B535-B831229CA5BF",
+          "BTTNotesInsteadOfDescription" : 0,
+          "BTTEnabled" : 1,
+          "BTTModifierMode" : 0,
+          "BTTOrder" : 2,
+          "BTTDisplayOrder" : 0,
+          "BTTAdditionalActions" : [
+            {
+              "BTTTriggerType" : -1,
+              "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
+              "BTTPredefinedActionType" : 195,
+              "BTTPredefinedActionName" : "Run Apple Script (async in background)",
+              "BTTInlineAppleScript" : "return \"done\"",
+              "BTTEnabled2" : 1,
+              "BTTAlternateModifierKeys" : 0,
+              "BTTUUID" : "2E3E99CB-30F7-486E-9B39-3BCCAD8C54F5",
+              "BTTNotesInsteadOfDescription" : 0,
+              "BTTEnabled" : 1,
+              "BTTModifierMode" : 0,
+              "BTTOrder" : 0,
+              "BTTDisplayOrder" : 0
+            }
+          ]
+        },
+        {
+          "BTTTriggerType" : 643,
+          "BTTTriggerTypeDescription" : "Named Trigger: makeHTML",
+          "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
+          "BTTPredefinedActionType" : 246,
+          "BTTPredefinedActionName" : "Execute Terminal Command (Synchronous, blocking)",
+          "BTTTerminalCommand" : "IFS=\ncode=`pbpaste`\nosascript -e 'tell application \"System Events\" to keystroke \"c\" using {control down, shift down}'\ncd \"`pbpaste`\"\necho $code > index.html",
+          "BTTTriggerName" : "makeHTML",
+          "BTTEnabled2" : 1,
+          "BTTAlternateModifierKeys" : 0,
+          "BTTUUID" : "38899AD0-480E-4A5B-85EB-5CC0EB7EA86B",
+          "BTTNotesInsteadOfDescription" : 0,
+          "BTTEnabled" : 1,
+          "BTTModifierMode" : 0,
+          "BTTOrder" : 3,
+          "BTTDisplayOrder" : 0
         }
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier" : "com.apple.finder",
+      "BTTAppName" : "Finder",
+      "BTTAppAutoInvertIcon" : 1,
+      "BTTTriggers" : [
+
       ]
     },
     {
@@ -265,14 +273,6 @@
             }
           ]
         }
-      ]
-    },
-    {
-      "BTTAppBundleIdentifier" : "com.apple.finder",
-      "BTTAppName" : "Finder",
-      "BTTAppAutoInvertIcon" : 1,
-      "BTTTriggers" : [
-
       ]
     }
   ],

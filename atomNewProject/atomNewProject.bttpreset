@@ -1,159 +1,8 @@
 {
   "BTTPresetName" : "atomNewProject",
-  "BTTPresetColor" : "53.319480, 1.129650, 112.965000, 255.000000",
-  "BTTPresetUUID" : "8D51498D-3644-4FFD-8D07-EDA8DA9FCFD4",
+  "BTTPresetColor" : "12.240000, 204.000000, 50.592000, 255.000000",
+  "BTTPresetUUID" : "EA9891E2-4D5B-4795-B7FF-6657039CCF37",
   "BTTPresetContent" : [
-    {
-      "BTTAppBundleIdentifier" : "BT.G",
-      "BTTAppName" : "Global",
-      "BTTAppAutoInvertIcon" : 1,
-      "BTTTriggers" : [
-        {
-          "BTTTriggerType" : 643,
-          "BTTTriggerTypeDescription" : "Named Trigger: makeCSS",
-          "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
-          "BTTPredefinedActionType" : 246,
-          "BTTPredefinedActionName" : "Execute Terminal Command (Synchronous, blocking)",
-          "BTTTerminalCommand" : "cd \"`pbpaste`\"\nmkdir css\ncd css\nprintf \"* {\n\tmargin: 0;\n\tpadding: 0;\n\tbox-sizing: border-box;\n\tfont-family: 'Roboto', sans-serif;\n}\" > main.css",
-          "BTTTriggerName" : "makeCSS",
-          "BTTEnabled2" : 1,
-          "BTTAlternateModifierKeys" : 0,
-          "BTTUUID" : "C0C77E15-01A7-49F8-843E-AFD233174904",
-          "BTTNotesInsteadOfDescription" : 0,
-          "BTTEnabled" : 1,
-          "BTTModifierMode" : 0,
-          "BTTOrder" : 0,
-          "BTTDisplayOrder" : 0,
-          "BTTAdditionalActions" : [
-            {
-              "BTTTriggerType" : -1,
-              "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
-              "BTTPredefinedActionType" : 195,
-              "BTTPredefinedActionName" : "Run Apple Script (async in background)",
-              "BTTInlineAppleScript" : "return \"done\"",
-              "BTTEnabled2" : 1,
-              "BTTAlternateModifierKeys" : 0,
-              "BTTUUID" : "2160FF1F-5396-4323-89B9-62A2B77EA471",
-              "BTTNotesInsteadOfDescription" : 0,
-              "BTTEnabled" : 1,
-              "BTTModifierMode" : 0,
-              "BTTOrder" : 0,
-              "BTTDisplayOrder" : 0
-            }
-          ]
-        },
-        {
-          "BTTTriggerType" : 643,
-          "BTTTriggerTypeDescription" : "Named Trigger: makeSCSS",
-          "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
-          "BTTPredefinedActionType" : 246,
-          "BTTPredefinedActionName" : "Execute Terminal Command (Synchronous, blocking)",
-          "BTTTerminalCommand" : "cd \"`pbpaste`\"\nmkdir scss\ncd scss\nprintf \"* {\n\tmargin: 0;\n\tpadding: 0;\n\tbox-sizing: border-box;\n\tfont-family: 'Roboto', sans-serif;\n}\" > main.scss",
-          "BTTTriggerName" : "makeSCSS",
-          "BTTEnabled2" : 1,
-          "BTTAlternateModifierKeys" : 0,
-          "BTTUUID" : "05A93916-86FF-4DF5-8C1D-0255214F6867",
-          "BTTNotesInsteadOfDescription" : 0,
-          "BTTEnabled" : 1,
-          "BTTModifierMode" : 0,
-          "BTTOrder" : 1,
-          "BTTDisplayOrder" : 0,
-          "BTTAdditionalActions" : [
-            {
-              "BTTTriggerType" : -1,
-              "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
-              "BTTPredefinedActionType" : 195,
-              "BTTPredefinedActionName" : "Run Apple Script (async in background)",
-              "BTTInlineAppleScript" : "return \"done\"",
-              "BTTEnabled2" : 1,
-              "BTTAlternateModifierKeys" : 0,
-              "BTTUUID" : "E0FA83F6-AAA9-4993-B8F7-2DC20CBDF542",
-              "BTTNotesInsteadOfDescription" : 0,
-              "BTTEnabled" : 1,
-              "BTTModifierMode" : 0,
-              "BTTOrder" : 0,
-              "BTTDisplayOrder" : 0
-            }
-          ]
-        },
-        {
-          "BTTTriggerType" : 643,
-          "BTTTriggerTypeDescription" : "Named Trigger: makePHP",
-          "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
-          "BTTPredefinedActionType" : 246,
-          "BTTPredefinedActionName" : "Execute Terminal Command (Synchronous, blocking)",
-          "BTTTerminalCommand" : "IFS=\ncode=`pbpaste`\nosascript -e 'tell application \"System Events\" to keystroke \"c\" using {control down, shift down}'\ncd \"`pbpaste`\"\necho $code > index.php",
-          "BTTTriggerName" : "makePHP",
-          "BTTEnabled2" : 1,
-          "BTTAlternateModifierKeys" : 0,
-          "BTTUUID" : "92A7F599-6494-4393-977D-4765D1F906CE",
-          "BTTNotesInsteadOfDescription" : 0,
-          "BTTEnabled" : 1,
-          "BTTModifierMode" : 0,
-          "BTTOrder" : 4,
-          "BTTDisplayOrder" : 0
-        },
-        {
-          "BTTTriggerType" : 643,
-          "BTTTriggerTypeDescription" : "Named Trigger: makeJS",
-          "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
-          "BTTPredefinedActionType" : 246,
-          "BTTPredefinedActionName" : "Execute Terminal Command (Synchronous, blocking)",
-          "BTTTerminalCommand" : "cd \"`pbpaste`\"\nmkdir js\ncd js\nprintf \"console.log('JS has loaded');\" > main.js",
-          "BTTTriggerName" : "makeJS",
-          "BTTEnabled2" : 1,
-          "BTTAlternateModifierKeys" : 0,
-          "BTTUUID" : "8E2B665D-1D6C-4304-B535-B831229CA5BF",
-          "BTTNotesInsteadOfDescription" : 0,
-          "BTTEnabled" : 1,
-          "BTTModifierMode" : 0,
-          "BTTOrder" : 2,
-          "BTTDisplayOrder" : 0,
-          "BTTAdditionalActions" : [
-            {
-              "BTTTriggerType" : -1,
-              "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
-              "BTTPredefinedActionType" : 195,
-              "BTTPredefinedActionName" : "Run Apple Script (async in background)",
-              "BTTInlineAppleScript" : "return \"done\"",
-              "BTTEnabled2" : 1,
-              "BTTAlternateModifierKeys" : 0,
-              "BTTUUID" : "2E3E99CB-30F7-486E-9B39-3BCCAD8C54F5",
-              "BTTNotesInsteadOfDescription" : 0,
-              "BTTEnabled" : 1,
-              "BTTModifierMode" : 0,
-              "BTTOrder" : 0,
-              "BTTDisplayOrder" : 0
-            }
-          ]
-        },
-        {
-          "BTTTriggerType" : 643,
-          "BTTTriggerTypeDescription" : "Named Trigger: makeHTML",
-          "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
-          "BTTPredefinedActionType" : 246,
-          "BTTPredefinedActionName" : "Execute Terminal Command (Synchronous, blocking)",
-          "BTTTerminalCommand" : "IFS=\ncode=`pbpaste`\nosascript -e 'tell application \"System Events\" to keystroke \"c\" using {control down, shift down}'\ncd \"`pbpaste`\"\necho $code > index.html",
-          "BTTTriggerName" : "makeHTML",
-          "BTTEnabled2" : 1,
-          "BTTAlternateModifierKeys" : 0,
-          "BTTUUID" : "38899AD0-480E-4A5B-85EB-5CC0EB7EA86B",
-          "BTTNotesInsteadOfDescription" : 0,
-          "BTTEnabled" : 1,
-          "BTTModifierMode" : 0,
-          "BTTOrder" : 3,
-          "BTTDisplayOrder" : 0
-        }
-      ]
-    },
-    {
-      "BTTAppBundleIdentifier" : "com.apple.finder",
-      "BTTAppName" : "Finder",
-      "BTTAppAutoInvertIcon" : 1,
-      "BTTTriggers" : [
-
-      ]
-    },
     {
       "BTTAppBundleIdentifier" : "com.github.atom",
       "BTTAppName" : "Atom",
@@ -173,7 +22,7 @@
           "BTTShortcutToSend" : "59,56,8",
           "BTTEnabled2" : 1,
           "BTTAlternateModifierKeys" : 0,
-          "BTTUUID" : "7E3D22B5-8213-40C7-9A33-C02B14A09EE3",
+          "BTTUUID" : "CDBE2024-0C0C-46E1-93CC-362314D15D8A",
           "BTTNotesInsteadOfDescription" : 0,
           "BTTEnabled" : 1,
           "BTTModifierMode" : 0,
@@ -192,7 +41,7 @@
               "BTTActionFloatingHTMLConfig" : "{\"BTTCenterOnOpen\":false,\"BTTShowButtons\":false,\"BTTSize\":\"{300, 300}\",\"BTTCloseOnOutsideClick\":true,\"BTTCloseOnBrowserOpen\":false,\"BTTDoNotCache\":true,\"BTTDrawTitleBezel\":false,\"BTTUseWhiteBackground\":false}",
               "BTTEnabled2" : 1,
               "BTTAlternateModifierKeys" : 0,
-              "BTTUUID" : "235C328B-B7C2-4EC4-B0AB-CF410462BC8E",
+              "BTTUUID" : "E5CC43EA-CA69-4E9E-8CF2-51634F6BF2E6",
               "BTTNotesInsteadOfDescription" : 0,
               "BTTEnabled" : 1,
               "BTTModifierMode" : 0,
@@ -207,7 +56,7 @@
                   "BTTPredefinedActionName" : "No Action",
                   "BTTEnabled2" : 1,
                   "BTTAlternateModifierKeys" : 0,
-                  "BTTUUID" : "FF4BFC8D-7EB9-459B-970C-1B4A61FDB75F",
+                  "BTTUUID" : "ED3573CD-F6CE-4E68-BEB4-E9291D2DCD8B",
                   "BTTNotesInsteadOfDescription" : 0,
                   "BTTEnabled" : 1,
                   "BTTModifierMode" : 0,
@@ -239,7 +88,7 @@
               },
               "BTTFiles" : [
                 {
-                  "BTTFileContent" : "PGh0bWw+Cgk8aGVhZD4KCQk8c2NyaXB0PgoJCQlmdW5jdGlvbiBCVFRJbml0aWFsaXplKCkgewoJCQkJdmFyIGZpbGVDaG9pY2UgPSB7CgkJCQkJJ2h0bWwnOnRydWUsCgkJCQkJJ2Nzcyc6dHJ1ZSwKCQkJCQknc2Nzcyc6ZmFsc2UsCgkJCQkJJ2pzJzpmYWxzZSwKCQkJCQknanF1ZXJ5JzpmYWxzZSwKCQkJCQkncGhwJzpmYWxzZQoJCQkJfTsKCgkJCQlbXS5mb3JFYWNoLmNhbGwoZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgnLml0ZW0nKSwgKGUpPT57CgkJCQkJZS5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsICgpPT4gewoJCQkJCQlmb3IgKHZhciBrZXkgaW4gZmlsZUNob2ljZSkgewoJCQkJCQkJaWYgKGZpbGVDaG9pY2UuaGFzT3duUHJvcGVydHkoa2V5KSkgewoJCQkJCQkJCWlmIChrZXkgPT0gZS5kYXRhc2V0LnR5cGUpIHsKCQkJCQkJCQkJZmlsZUNob2ljZVtrZXldID0gIWZpbGVDaG9pY2Vba2V5XTsKCQkJCQkJCQl9CgkJCQkJCQl9CgkJCQkJCX0KCgkJCQkJCWlmIChlLmNsYXNzTGlzdC5jb250YWlucygnc2VsZWN0ZWQnKSkgewoJCQkJCQkJZS5jbGFzc0xpc3QucmVtb3ZlKCdzZWxlY3RlZCcpOwoJCQkJCQkJaWYgKGUuY2xhc3NMaXN0LmNvbnRhaW5zKCdqcycpKSB7CgkJCQkJCQkJaWYgKGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJy5qcXVlcnknKS5jbGFzc0xpc3QuY29udGFpbnMoJ3NlbGVjdGVkJykpIHsKCQkJCQkJCQkJZG9jdW1lbnQucXVlcnlTZWxlY3RvcignLmpxdWVyeScpLmNsYXNzTGlzdC5yZW1vdmUoJ3NlbGVjdGVkJyk7CgkJCQkJCQkJCWZpbGVDaG9pY2VbJ2pxdWVyeSddID0gZmFsc2U7CgkJCQkJCQkJfQoJCQkJCQkJfQoJCQkJCQkJaWYgKGUuY2xhc3NMaXN0LmNvbnRhaW5zKCdjc3MnKSkgewoJCQkJCQkJCWlmIChkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcuc2NzcycpLmNsYXNzTGlzdC5jb250YWlucygnc2VsZWN0ZWQnKSkgewoJCQkJCQkJCQlkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcuc2NzcycpLmNsYXNzTGlzdC5yZW1vdmUoJ3NlbGVjdGVkJyk7CgkJCQkJCQkJCWZpbGVDaG9pY2VbJ3Njc3MnXSA9IGZhbHNlOwoJCQkJCQkJCX0KCQkJCQkJCX0KCQkJCQkJfSBlbHNlIHsKCQkJCQkJCWUuY2xhc3NMaXN0LmFkZCgnc2VsZWN0ZWQnKTsKCQkJCQkJCWlmIChlLmNsYXNzTGlzdC5jb250YWlucygncGhwJykpIHsKCQkJCQkJCQlkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcuaHRtbCcpLmNsYXNzTGlzdC5yZW1vdmUoJ3NlbGVjdGVkJyk7CgkJCQkJCQkJZmlsZUNob2ljZVsnaHRtbCddID0gZmFsc2U7CgkJCQkJCQl9CgkJCQkJCQlpZiAoZS5jbGFzc0xpc3QuY29udGFpbnMoJ2h0bWwnKSkgewoJCQkJCQkJCWRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJy5waHAnKS5jbGFzc0xpc3QucmVtb3ZlKCdzZWxlY3RlZCcpOwoJCQkJCQkJCWZpbGVDaG9pY2VbJ3BocCddID0gZmFsc2U7CgkJCQkJCQl9CgkJCQkJCQlpZiAoZS5jbGFzc0xpc3QuY29udGFpbnMoJ3Njc3MnKSkgewoJCQkJCQkJCWlmICghZG9jdW1lbnQucXVlcnlTZWxlY3RvcignLmNzcycpLmNsYXNzTGlzdC5jb250YWlucygnc2VsZWN0ZWQnKSkgewoJCQkJCQkJCQlkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcuY3NzJykuY2xhc3NMaXN0LmFkZCgnc2VsZWN0ZWQnKTsKCQkJCQkJCQkJZmlsZUNob2ljZVsnY3NzJ10gPSB0cnVlOwoJCQkJCQkJCX0KCQkJCQkJCX0KCQkJCQkJCWlmIChlLmNsYXNzTGlzdC5jb250YWlucygnanF1ZXJ5JykpIHsKCQkJCQkJCQlpZiAoIWRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJy5qcycpLmNsYXNzTGlzdC5jb250YWlucygnc2VsZWN0ZWQnKSkgewoJCQkJCQkJCQlkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcuanMnKS5jbGFzc0xpc3QuYWRkKCdzZWxlY3RlZCcpOwoJCQkJCQkJCQlmaWxlQ2hvaWNlWydqcyddID0gdHJ1ZTsKCQkJCQkJCQl9CgoJCQkJCQkJfQoJCQkJCQl9CgkJCQkJfSk7CgkJCQl9KTsKCgkJCQl2YXIgY3NzU3RyaW5nID0gJyc7CgkJCQl2YXIganNTdHJpbmcgPSAnJzsKCQkJCXZhciBqcXVlcnlTdHJpbmcgPSAnJzsKCQkJCXZhciBwaHBTdHJpbmcgPSAnJzsKCgkJCQl2YXIgbmFtZWRUcmlnZ2VyID0gJyc7CgoJCQkJZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ21ha2VCdG4nKS5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsICgpPT4gewoKCQkJCQlpZiAoZmlsZUNob2ljZS5jc3MgPT0gdHJ1ZSkgewoJCQkJCQl3aW5kb3cuQlRULmNhbGxIYW5kbGVyKCd0cmlnZ2VyX25hbWVkJywgewoJCQkJCQkJdHJpZ2dlcl9uYW1lOiAnbWFrZUNTUycKCQkJCQkJfSwgZnVuY3Rpb24gY2FsbGJhY2socmVzcG9uc2UxKSB7CgkJCQkJCQljc3NTdHJpbmcgPSAnPGxpbmsgaHJlZj0iY3NzL21haW4uY3NzIiByZWw9InN0eWxlc2hlZXQiPic7CgoJCQkJCQkJaWYgKGZpbGVDaG9pY2Uuc2NzcyA9PSB0cnVlKSB7CgkJCQkJCQkJd2luZG93LkJUVC5jYWxsSGFuZGxlcigndHJpZ2dlcl9uYW1lZCcsIHsKCQkJCQkJCQkJdHJpZ2dlcl9uYW1lOiAnbWFrZVNDU1MnCgkJCQkJCQkJfSwgZnVuY3Rpb24gY2FsbGJhY2socmVzcG9uc2UyKSB7CgoJCQkJCQkJCX0pOwoJCQkJCQkJfQoJCQkJCQl9KTsKCQkJCQl9CgoJCQkJCWlmIChmaWxlQ2hvaWNlLmpzID09IHRydWUpIHsKCQkJCQkJd2luZG93LkJUVC5jYWxsSGFuZGxlcigndHJpZ2dlcl9uYW1lZCcsIHsKCQkJCQkJCXRyaWdnZXJfbmFtZTogJ21ha2VKUycKCQkJCQkJfSwgZnVuY3Rpb24gY2FsbGJhY2socmVzcG9uc2UzKSB7CgkJCQkJCQlqc1N0cmluZyA9ICc8c2NyaXB0IHNyYz0ianMvbWFpbi5qcyI+PFwvc2NyaXB0Pic7CgoJCQkJCQkJaWYgKGZpbGVDaG9pY2UuanF1ZXJ5ID09IHRydWUpIHsKCQkJCQkJCQlqcXVlcnlTdHJpbmcgPSAnPHNjcmlwdCBzcmM9Imh0dHBzOi8vYWpheC5nb29nbGVhcGlzLmNvbS9hamF4L2xpYnMvanF1ZXJ5LzMuNC4xL2pxdWVyeS5taW4uanMiPjxcL3NjcmlwdD4nOwoJCQkJCQkJfQoJCQkJCQl9KTsKCQkJCQl9CgoJCQkJCXNldFRpbWVvdXQoc2V0SW5kZXgsIDEwMDApOwoJCQkJfSk7CgoJCQkJZnVuY3Rpb24gc2V0SW5kZXggKCkgewoJCQkJCWlmIChmaWxlQ2hvaWNlLnBocCkgewoJCQkJCQluYW1lZFRyaWdnZXIgPSAnbWFrZVBIUCc7CgkJCQkJCXBocFN0cmluZyA9ICc8P3BocFxuXG4vLyBlY2hvICJQSFAgaW4gaGVyZSJcblxuPz5cbic7CgkJCQkJfSBlbHNlIHsKCQkJCQkJbmFtZWRUcmlnZ2VyID0gJ21ha2VIVE1MJzsKCQkJCQl9CgoJCQkJCWxldCBmaW5hbFN0cmluZyA9IHBocFN0cmluZyArIGA8IURPQ1RZUEVfaHRtbD5cbjxodG1sPlxuCTxoZWFkPlxuCQk8bGluayBocmVmPSJodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2Nzcz9mYW1pbHk9Um9ib3RvJmRpc3BsYXk9c3dhcCIgcmVsPSJzdHlsZXNoZWV0Ij5cbgkJYCArIGNzc1N0cmluZyArIGBcbgk8L2hlYWQ+XG4JPGJvZHk+XG4JCWAgKyBqcXVlcnlTdHJpbmcgKyBgXG4JCWAgKyBqc1N0cmluZyArIGBcbgk8L2JvZHk+XG48L2h0bWw+YDsKCQkJCQkvLyBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcuaXRlbXNDb250YWluZXInKS5pbm5lckhUTUwgPSAnJzsKCQkJCQkvLyBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcuaXRlbXNDb250YWluZXInKS5pbm5lclRleHQgPSBmaW5hbFN0cmluZzsKCQkJCQljb3B5U3RyaW5nVG9DbGlwYm9hcmQoZmluYWxTdHJpbmcpOwoKCQkJCQl3aW5kb3cuQlRULmNhbGxIYW5kbGVyKCd0cmlnZ2VyX25hbWVkJywgewoJCQkJCQl0cmlnZ2VyX25hbWU6IG5hbWVkVHJpZ2dlciwKCQkJCQkJY2xvc2VGbG9hdGluZ0hUTUxNZW51OiAxCgkJCQkJfSk7CgkJCQl9CgkJCX0KCgkJCWZ1bmN0aW9uIGNvcHlTdHJpbmdUb0NsaXBib2FyZCAoc3RyKSB7CgkJCQkvLyBDcmVhdGUgbmV3IGVsZW1lbnQKCQkJCXZhciBlbCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ3RleHRhcmVhJyk7CgkJCQkvLyBTZXQgdmFsdWUgKHN0cmluZyB0byBiZSBjb3BpZWQpCgkJCQllbC52YWx1ZSA9IHN0cjsKCQkJCS8vIFNldCBub24tZWRpdGFibGUgdG8gYXZvaWQgZm9jdXMgYW5kIG1vdmUgb3V0c2lkZSBvZiB2aWV3CgkJCQllbC5zZXRBdHRyaWJ1dGUoJ3JlYWRvbmx5JywgJycpOwoJCQkJZWwuc3R5bGUgPSB7cG9zaXRpb246ICdhYnNvbHV0ZScsIGxlZnQ6ICctOTk5OXB4J307CgkJCQlkb2N1bWVudC5ib2R5LmFwcGVuZENoaWxkKGVsKTsKCQkJCS8vIFNlbGVjdCB0ZXh0IGluc2lkZSBlbGVtZW50CgkJCQllbC5zZWxlY3QoKTsKCQkJCS8vIENvcHkgdGV4dCB0byBjbGlwYm9hcmQKCQkJCWRvY3VtZW50LmV4ZWNDb21tYW5kKCdjb3B5Jyk7CgkJCQkvLyBSZW1vdmUgdGVtcG9yYXJ5IGVsZW1lbnQKCQkJCWRvY3VtZW50LmJvZHkucmVtb3ZlQ2hpbGQoZWwpOwoJCQl9CgkJPC9zY3JpcHQ+CgkJPHN0eWxlPgoJCQkqIHsKCQkJCW1hcmdpbjogMDsKCQkJCXBhZGRpbmc6IDA7CgkJCQlib3gtc2l6aW5nOiBib3JkZXItYm94OwoJCQkJZm9udC1mYW1pbHk6ICdSb2JvdG8nLCBzYW5zLXNlcmlmOwoJCQl9CgkJCWJvZHkgewoJCQkJYmFja2dyb3VuZDogY2xlYXI7CgkJCQljb2xvcjogd2hpdGU7CgkJCQlkaXNwbGF5OiBmbGV4OwoJCQkJanVzdGlmeS1jb250ZW50OiBjZW50ZXI7CgkJCQlhbGlnbi1pdGVtczogY2VudGVyOwoJCQl9CgkJCS5ib3ggewoJCQkJaGVpZ2h0OiAzMDBweDsKCQkJCXdpZHRoOiAzMDBweDsKCQkJCWJvcmRlci1yYWRpdXM6IDQ4cHg7CgkJCQlkaXNwbGF5OiBmbGV4OwoJCQkJanVzdGlmeS1jb250ZW50OiBjZW50ZXI7CgkJCQlhbGlnbi1pdGVtczogY2VudGVyOwoJCQl9CgkJCS5pdGVtc0NvbnRhaW5lciB7CgkJCQl3aWR0aDogMTAwJTsKCQkJCWRpc3BsYXk6IGZsZXg7CgkJCQlmbGV4LXdyYXA6IHdyYXA7CgkJCQlqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsKCQkJfQoJCQkuaXRlbSB7CgkJCQl3aWR0aDogNzVweDsKCQkJCWhlaWdodDogNzVweDsKCQkJCWJvcmRlcjogbm9uZTsKCQkJCWJvcmRlci1yYWRpdXM6IDUwJTsKCQkJCWJhY2tncm91bmQtY29sb3I6ICNlNTM5MzU7CgkJCQlkaXNwbGF5OiBmbGV4OwoJCQkJanVzdGlmeS1jb250ZW50OiBjZW50ZXI7CgkJCQlhbGlnbi1pdGVtczogY2VudGVyOwoJCQkJbWFyZ2luOiAxMnB4IDEycHg7CgkJCQljdXJzb3I6IHBvaW50ZXI7CgkJCQlib3gtc2hhZG93OiAwIDhweCAyMHB4IHJnYmEoMCwwLDAsMC4xKTsKCQkJCXRyYW5zaXRpb246IDAuM3M7CgkJCQlmb250LXNpemU6IDFlbTsKCQkJfQoJCQkuaXRlbTpob3ZlciwgI21ha2VCdG46aG92ZXIgewoJCQkJYm94LXNoYWRvdzogMCA4cHggMjBweCByZ2JhKDAsMCwwLDAuNSk7CgkJCX0KCQkJLnNlbGVjdGVkIHsKCQkJCWJhY2tncm91bmQtY29sb3I6ICM3Q0IzNDI7CgkJCX0KCQkJI21ha2VCdG4gewoJCQkJZm9udC1zaXplOiAxZW07CgkJCQljb2xvcjogd2hpdGU7CgkJCQlib3JkZXI6IG5vbmU7CgkJCQliYWNrZ3JvdW5kLWNvbG9yOiAjNTEyREE4OwoJCQkJcGFkZGluZzogMTJweCAxOHB4OwoJCQkJYm9yZGVyLXJhZGl1czogOHB4OwoJCQkJY3Vyc29yOiBwb2ludGVyOwoJCQkJYm94LXNoYWRvdzogMCA4cHggMjBweCByZ2JhKDAsMCwwLDAuMSk7CgkJCQl0cmFuc2l0aW9uOiAwLjNzOwoJCQl9CgkJPC9zdHlsZT4KCTwvaGVhZD4KCTxib2R5IGNsYXNzPSJtZW51Ij4KCQk8ZGl2IGNsYXNzPSJpdGVtc0NvbnRhaW5lciI+CgkJCTxidXR0b24gY2xhc3M9Iml0ZW0gaHRtbCBzZWxlY3RlZCIgZGF0YS10eXBlPSJodG1sIj4KCQkJCUhUTUwKCQkJPC9idXR0b24+CgkJCTxidXR0b24gY2xhc3M9Iml0ZW0ganMiIGRhdGEtdHlwZT0ianMiPgoJCQkJSlMKCQkJPC9idXR0b24+CgkJCTxidXR0b24gY2xhc3M9Iml0ZW0gY3NzIHNlbGVjdGVkIiBkYXRhLXR5cGU9ImNzcyI+CgkJCQlDU1MKCQkJPC9idXR0b24+CgkJCTxidXR0b24gY2xhc3M9Iml0ZW0gcGhwIiBkYXRhLXR5cGU9InBocCI+CgkJCQlQSFAKCQkJPC9idXR0b24+CgkJCTxidXR0b24gY2xhc3M9Iml0ZW0ganF1ZXJ5IiBkYXRhLXR5cGU9ImpxdWVyeSI+CgkJCQlqUXVlcnkKCQkJPC9idXR0b24+CgkJCTxidXR0b24gY2xhc3M9Iml0ZW0gc2NzcyIgZGF0YS10eXBlPSJzY3NzIj4KCQkJCVNDU1MKCQkJPC9idXR0b24+CgkJCTxidXR0b24gaWQ9Im1ha2VCdG4iPk1ha2U8L2J1dHRvbj4KCQk8L2Rpdj4KCTwvYm9keT4KPC9odG1sPg==",
+                  "BTTFileContent" : "PGh0bWw+Cgk8aGVhZD4KCQk8c2NyaXB0PgoJCQlmdW5jdGlvbiBCVFRJbml0aWFsaXplKCkgewoJCQkJdmFyIGZpbGVDaG9pY2UgPSB7CgkJCQkJJ2h0bWwnOnRydWUsCgkJCQkJJ2Nzcyc6dHJ1ZSwKCQkJCQknc2Nzcyc6ZmFsc2UsCgkJCQkJJ2pzJzpmYWxzZSwKCQkJCQknanF1ZXJ5JzpmYWxzZSwKCQkJCQkncGhwJzpmYWxzZQoJCQkJfTsKCgkJCQlbXS5mb3JFYWNoLmNhbGwoZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgnLml0ZW0nKSwgKGUpPT57CgkJCQkJZS5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsICgpPT4gewoJCQkJCQlmb3IgKHZhciBrZXkgaW4gZmlsZUNob2ljZSkgewoJCQkJCQkJaWYgKGZpbGVDaG9pY2UuaGFzT3duUHJvcGVydHkoa2V5KSkgewoJCQkJCQkJCWlmIChrZXkgPT0gZS5kYXRhc2V0LnR5cGUpIHsKCQkJCQkJCQkJZmlsZUNob2ljZVtrZXldID0gIWZpbGVDaG9pY2Vba2V5XTsKCQkJCQkJCQl9CgkJCQkJCQl9CgkJCQkJCX0KCgkJCQkJCWlmIChlLmNsYXNzTGlzdC5jb250YWlucygnc2VsZWN0ZWQnKSkgewoJCQkJCQkJZS5jbGFzc0xpc3QucmVtb3ZlKCdzZWxlY3RlZCcpOwoJCQkJCQkJaWYgKGUuY2xhc3NMaXN0LmNvbnRhaW5zKCdqcycpKSB7CgkJCQkJCQkJaWYgKGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJy5qcXVlcnknKS5jbGFzc0xpc3QuY29udGFpbnMoJ3NlbGVjdGVkJykpIHsKCQkJCQkJCQkJZG9jdW1lbnQucXVlcnlTZWxlY3RvcignLmpxdWVyeScpLmNsYXNzTGlzdC5yZW1vdmUoJ3NlbGVjdGVkJyk7CgkJCQkJCQkJCWZpbGVDaG9pY2VbJ2pxdWVyeSddID0gZmFsc2U7CgkJCQkJCQkJfQoJCQkJCQkJfQoJCQkJCQkJaWYgKGUuY2xhc3NMaXN0LmNvbnRhaW5zKCdjc3MnKSkgewoJCQkJCQkJCWlmIChkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcuc2NzcycpLmNsYXNzTGlzdC5jb250YWlucygnc2VsZWN0ZWQnKSkgewoJCQkJCQkJCQlkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcuc2NzcycpLmNsYXNzTGlzdC5yZW1vdmUoJ3NlbGVjdGVkJyk7CgkJCQkJCQkJCWZpbGVDaG9pY2VbJ3Njc3MnXSA9IGZhbHNlOwoJCQkJCQkJCX0KCQkJCQkJCX0KCQkJCQkJfSBlbHNlIHsKCQkJCQkJCWUuY2xhc3NMaXN0LmFkZCgnc2VsZWN0ZWQnKTsKCQkJCQkJCWlmIChlLmNsYXNzTGlzdC5jb250YWlucygncGhwJykpIHsKCQkJCQkJCQlkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcuaHRtbCcpLmNsYXNzTGlzdC5yZW1vdmUoJ3NlbGVjdGVkJyk7CgkJCQkJCQkJZmlsZUNob2ljZVsnaHRtbCddID0gZmFsc2U7CgkJCQkJCQl9CgkJCQkJCQlpZiAoZS5jbGFzc0xpc3QuY29udGFpbnMoJ2h0bWwnKSkgewoJCQkJCQkJCWRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJy5waHAnKS5jbGFzc0xpc3QucmVtb3ZlKCdzZWxlY3RlZCcpOwoJCQkJCQkJCWZpbGVDaG9pY2VbJ3BocCddID0gZmFsc2U7CgkJCQkJCQl9CgkJCQkJCQlpZiAoZS5jbGFzc0xpc3QuY29udGFpbnMoJ3Njc3MnKSkgewoJCQkJCQkJCWlmICghZG9jdW1lbnQucXVlcnlTZWxlY3RvcignLmNzcycpLmNsYXNzTGlzdC5jb250YWlucygnc2VsZWN0ZWQnKSkgewoJCQkJCQkJCQlkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcuY3NzJykuY2xhc3NMaXN0LmFkZCgnc2VsZWN0ZWQnKTsKCQkJCQkJCQkJZmlsZUNob2ljZVsnY3NzJ10gPSB0cnVlOwoJCQkJCQkJCX0KCQkJCQkJCX0KCQkJCQkJCWlmIChlLmNsYXNzTGlzdC5jb250YWlucygnanF1ZXJ5JykpIHsKCQkJCQkJCQlpZiAoIWRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJy5qcycpLmNsYXNzTGlzdC5jb250YWlucygnc2VsZWN0ZWQnKSkgewoJCQkJCQkJCQlkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcuanMnKS5jbGFzc0xpc3QuYWRkKCdzZWxlY3RlZCcpOwoJCQkJCQkJCQlmaWxlQ2hvaWNlWydqcyddID0gdHJ1ZTsKCQkJCQkJCQl9CgoJCQkJCQkJfQoJCQkJCQl9CgkJCQkJfSk7CgkJCQl9KTsKCgkJCQl2YXIgY3NzU3RyaW5nID0gJyc7CgkJCQl2YXIganNTdHJpbmcgPSAnJzsKCQkJCXZhciBqcXVlcnlTdHJpbmcgPSAnJzsKCQkJCXZhciBwaHBTdHJpbmcgPSAnJzsKCgkJCQl2YXIgbmFtZWRUcmlnZ2VyID0gJyc7CgoJCQkJZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ21ha2VCdG4nKS5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsICgpPT4gewoKCQkJCQlpZiAoZmlsZUNob2ljZS5jc3MgPT0gdHJ1ZSkgewoJCQkJCQl3aW5kb3cuQlRULmNhbGxIYW5kbGVyKCd0cmlnZ2VyX25hbWVkJywgewoJCQkJCQkJdHJpZ2dlcl9uYW1lOiAnbWFrZUNTUycKCQkJCQkJfSwgZnVuY3Rpb24gY2FsbGJhY2socmVzcG9uc2UxKSB7CgkJCQkJCQljc3NTdHJpbmcgPSAnPGxpbmsgaHJlZj0iY3NzL21haW4uY3NzIiByZWw9InN0eWxlc2hlZXQiPic7CgoJCQkJCQkJaWYgKGZpbGVDaG9pY2Uuc2NzcyA9PSB0cnVlKSB7CgkJCQkJCQkJd2luZG93LkJUVC5jYWxsSGFuZGxlcigndHJpZ2dlcl9uYW1lZCcsIHsKCQkJCQkJCQkJdHJpZ2dlcl9uYW1lOiAnbWFrZVNDU1MnCgkJCQkJCQkJfSwgZnVuY3Rpb24gY2FsbGJhY2socmVzcG9uc2UyKSB7CgoJCQkJCQkJCX0pOwoJCQkJCQkJfQoJCQkJCQl9KTsKCQkJCQl9CgoJCQkJCWlmIChmaWxlQ2hvaWNlLmpzID09IHRydWUpIHsKCQkJCQkJd2luZG93LkJUVC5jYWxsSGFuZGxlcigndHJpZ2dlcl9uYW1lZCcsIHsKCQkJCQkJCXRyaWdnZXJfbmFtZTogJ21ha2VKUycKCQkJCQkJfSwgZnVuY3Rpb24gY2FsbGJhY2socmVzcG9uc2UzKSB7CgkJCQkJCQlqc1N0cmluZyA9ICc8c2NyaXB0IHNyYz0ianMvbWFpbi5qcyI+PFwvc2NyaXB0Pic7CgoJCQkJCQkJaWYgKGZpbGVDaG9pY2UuanF1ZXJ5ID09IHRydWUpIHsKCQkJCQkJCQlqcXVlcnlTdHJpbmcgPSAnPHNjcmlwdCBzcmM9Imh0dHBzOi8vYWpheC5nb29nbGVhcGlzLmNvbS9hamF4L2xpYnMvanF1ZXJ5LzMuNC4xL2pxdWVyeS5taW4uanMiPjxcL3NjcmlwdD4nOwoJCQkJCQkJfQoJCQkJCQl9KTsKCQkJCQl9CgoJCQkJCXNldFRpbWVvdXQoc2V0SW5kZXgsIDEwMDApOwoJCQkJfSk7CgoJCQkJZnVuY3Rpb24gc2V0SW5kZXggKCkgewoJCQkJCWlmIChmaWxlQ2hvaWNlLnBocCkgewoJCQkJCQluYW1lZFRyaWdnZXIgPSAnbWFrZVBIUCc7CgkJCQkJCXBocFN0cmluZyA9ICc8P3BocFxuXG4vLyBlY2hvICJQSFAgaW4gaGVyZSJcblxuPz5cbic7CgkJCQkJfSBlbHNlIHsKCQkJCQkJbmFtZWRUcmlnZ2VyID0gJ21ha2VIVE1MJzsKCQkJCQl9CgoJCQkJCWxldCBmaW5hbFN0cmluZyA9IHBocFN0cmluZyArIGA8IURPQ1RZUEUgaHRtbD5cbjxodG1sIGxhbmc9ImVuIiBkaXI9Imx0ciI+XG4JPGhlYWQ+XG4JCTxtZXRhIG5hbWU9InZpZXdwb3J0IiBjb250ZW50PSJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MS4wIj5cbgkJPGxpbmsgaHJlZj0iaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3M_ZmFtaWx5PVJvYm90byZkaXNwbGF5PXN3YXAiIHJlbD0ic3R5bGVzaGVldCI+XG4JCWAgKyBjc3NTdHJpbmcgKyBgXG4JPC9oZWFkPlxuCTxib2R5PlxuCQlgICsganF1ZXJ5U3RyaW5nICsgYFxuCQlgICsganNTdHJpbmcgKyBgXG4JPC9ib2R5PlxuPC9odG1sPmA7CgkJCQkJLy8gZG9jdW1lbnQucXVlcnlTZWxlY3RvcignLml0ZW1zQ29udGFpbmVyJykuaW5uZXJIVE1MID0gJyc7CgkJCQkJLy8gZG9jdW1lbnQucXVlcnlTZWxlY3RvcignLml0ZW1zQ29udGFpbmVyJykuaW5uZXJUZXh0ID0gZmluYWxTdHJpbmc7CgkJCQkJY29weVN0cmluZ1RvQ2xpcGJvYXJkKGZpbmFsU3RyaW5nKTsKCgkJCQkJd2luZG93LkJUVC5jYWxsSGFuZGxlcigndHJpZ2dlcl9uYW1lZCcsIHsKCQkJCQkJdHJpZ2dlcl9uYW1lOiBuYW1lZFRyaWdnZXIsCgkJCQkJCWNsb3NlRmxvYXRpbmdIVE1MTWVudTogMQoJCQkJCX0pOwoJCQkJfQoJCQl9CgoJCQlmdW5jdGlvbiBjb3B5U3RyaW5nVG9DbGlwYm9hcmQgKHN0cikgewoJCQkJLy8gQ3JlYXRlIG5ldyBlbGVtZW50CgkJCQl2YXIgZWwgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCd0ZXh0YXJlYScpOwoJCQkJLy8gU2V0IHZhbHVlIChzdHJpbmcgdG8gYmUgY29waWVkKQoJCQkJZWwudmFsdWUgPSBzdHI7CgkJCQkvLyBTZXQgbm9uLWVkaXRhYmxlIHRvIGF2b2lkIGZvY3VzIGFuZCBtb3ZlIG91dHNpZGUgb2YgdmlldwoJCQkJZWwuc2V0QXR0cmlidXRlKCdyZWFkb25seScsICcnKTsKCQkJCWVsLnN0eWxlID0ge3Bvc2l0aW9uOiAnYWJzb2x1dGUnLCBsZWZ0OiAnLTk5OTlweCd9OwoJCQkJZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChlbCk7CgkJCQkvLyBTZWxlY3QgdGV4dCBpbnNpZGUgZWxlbWVudAoJCQkJZWwuc2VsZWN0KCk7CgkJCQkvLyBDb3B5IHRleHQgdG8gY2xpcGJvYXJkCgkJCQlkb2N1bWVudC5leGVjQ29tbWFuZCgnY29weScpOwoJCQkJLy8gUmVtb3ZlIHRlbXBvcmFyeSBlbGVtZW50CgkJCQlkb2N1bWVudC5ib2R5LnJlbW92ZUNoaWxkKGVsKTsKCQkJfQoJCTwvc2NyaXB0PgoJCTxzdHlsZT4KCQkJKiB7CgkJCQltYXJnaW46IDA7CgkJCQlwYWRkaW5nOiAwOwoJCQkJYm94LXNpemluZzogYm9yZGVyLWJveDsKCQkJCWZvbnQtZmFtaWx5OiAnUm9ib3RvJywgc2Fucy1zZXJpZjsKCQkJfQoJCQlib2R5IHsKCQkJCWJhY2tncm91bmQ6IGNsZWFyOwoJCQkJY29sb3I6IHdoaXRlOwoJCQkJZGlzcGxheTogZmxleDsKCQkJCWp1c3RpZnktY29udGVudDogY2VudGVyOwoJCQkJYWxpZ24taXRlbXM6IGNlbnRlcjsKCQkJfQoJCQkuYm94IHsKCQkJCWhlaWdodDogMzAwcHg7CgkJCQl3aWR0aDogMzAwcHg7CgkJCQlib3JkZXItcmFkaXVzOiA0OHB4OwoJCQkJZGlzcGxheTogZmxleDsKCQkJCWp1c3RpZnktY29udGVudDogY2VudGVyOwoJCQkJYWxpZ24taXRlbXM6IGNlbnRlcjsKCQkJfQoJCQkuaXRlbXNDb250YWluZXIgewoJCQkJd2lkdGg6IDEwMCU7CgkJCQlkaXNwbGF5OiBmbGV4OwoJCQkJZmxleC13cmFwOiB3cmFwOwoJCQkJanVzdGlmeS1jb250ZW50OiBjZW50ZXI7CgkJCX0KCQkJLml0ZW0gewoJCQkJd2lkdGg6IDc1cHg7CgkJCQloZWlnaHQ6IDc1cHg7CgkJCQlib3JkZXI6IG5vbmU7CgkJCQlib3JkZXItcmFkaXVzOiA1MCU7CgkJCQliYWNrZ3JvdW5kLWNvbG9yOiAjZTUzOTM1OwoJCQkJZGlzcGxheTogZmxleDsKCQkJCWp1c3RpZnktY29udGVudDogY2VudGVyOwoJCQkJYWxpZ24taXRlbXM6IGNlbnRlcjsKCQkJCW1hcmdpbjogMTJweCAxMnB4OwoJCQkJY3Vyc29yOiBwb2ludGVyOwoJCQkJYm94LXNoYWRvdzogMCA4cHggMjBweCByZ2JhKDAsMCwwLDAuMSk7CgkJCQl0cmFuc2l0aW9uOiAwLjNzOwoJCQkJZm9udC1zaXplOiAxZW07CgkJCX0KCQkJLml0ZW06aG92ZXIsICNtYWtlQnRuOmhvdmVyIHsKCQkJCWJveC1zaGFkb3c6IDAgOHB4IDIwcHggcmdiYSgwLDAsMCwwLjUpOwoJCQl9CgkJCS5zZWxlY3RlZCB7CgkJCQliYWNrZ3JvdW5kLWNvbG9yOiAjN0NCMzQyOwoJCQl9CgkJCSNtYWtlQnRuIHsKCQkJCWZvbnQtc2l6ZTogMWVtOwoJCQkJY29sb3I6IHdoaXRlOwoJCQkJYm9yZGVyOiBub25lOwoJCQkJYmFja2dyb3VuZC1jb2xvcjogIzUxMkRBODsKCQkJCXBhZGRpbmc6IDEycHggMThweDsKCQkJCWJvcmRlci1yYWRpdXM6IDhweDsKCQkJCWN1cnNvcjogcG9pbnRlcjsKCQkJCWJveC1zaGFkb3c6IDAgOHB4IDIwcHggcmdiYSgwLDAsMCwwLjEpOwoJCQkJdHJhbnNpdGlvbjogMC4zczsKCQkJfQoJCTwvc3R5bGU+Cgk8L2hlYWQ+Cgk8Ym9keSBjbGFzcz0ibWVudSI+CgkJPGRpdiBjbGFzcz0iaXRlbXNDb250YWluZXIiPgoJCQk8YnV0dG9uIGNsYXNzPSJpdGVtIGh0bWwgc2VsZWN0ZWQiIGRhdGEtdHlwZT0iaHRtbCI+CgkJCQlIVE1MCgkJCTwvYnV0dG9uPgoJCQk8YnV0dG9uIGNsYXNzPSJpdGVtIGpzIiBkYXRhLXR5cGU9ImpzIj4KCQkJCUpTCgkJCTwvYnV0dG9uPgoJCQk8YnV0dG9uIGNsYXNzPSJpdGVtIGNzcyBzZWxlY3RlZCIgZGF0YS10eXBlPSJjc3MiPgoJCQkJQ1NTCgkJCTwvYnV0dG9uPgoJCQk8YnV0dG9uIGNsYXNzPSJpdGVtIHBocCIgZGF0YS10eXBlPSJwaHAiPgoJCQkJUEhQCgkJCTwvYnV0dG9uPgoJCQk8YnV0dG9uIGNsYXNzPSJpdGVtIGpxdWVyeSIgZGF0YS10eXBlPSJqcXVlcnkiPgoJCQkJalF1ZXJ5CgkJCTwvYnV0dG9uPgoJCQk8YnV0dG9uIGNsYXNzPSJpdGVtIHNjc3MiIGRhdGEtdHlwZT0ic2NzcyI+CgkJCQlTQ1NTCgkJCTwvYnV0dG9uPgoJCQk8YnV0dG9uIGlkPSJtYWtlQnRuIj5NYWtlPC9idXR0b24+CgkJPC9kaXY+Cgk8L2JvZHk+CjwvaHRtbD4=",
                   "BTTFileOther" : "html"
                 }
               ]
@@ -270,6 +119,157 @@
             {
               "BTTFileContent" : "PCEtLSB0aGlzIGlzIGJhc2VkIG9uIGh0dHBzOi8vd3d3LnVwbGFicy5jb20vcG9zdHMvY29sb3VyZnVsLWZsb3dlci1wb3B1cC1tZW51IC0tPgo8aHRtbD4KCTxoZWFkPgoJCTxzY3JpcHQ+CgkJCS8vIHRoaXMgZnVuY3Rpb24gaXMgY2FsbGVkIGV2ZXJ5aW1lIHlvdSBvcGVuIHRoZSBtZW51IGluIEJUVAoJCQlmdW5jdGlvbiBCVFRJbml0aWFsaXplKCkgewoJCQkJc2V0VGltZW91dCgoKSA9PiB7CgkJCQkJLy8gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoIm1lbnUtb3BlbiIpLmNoZWNrZWQgPSB0cnVlOwoJCQkJCXZhciBmaWxlQ2hvaWNlID0gewoJCQkJCQknaHRtbCc6dHJ1ZSwKCQkJCQkJJ2Nzcyc6dHJ1ZSwKCQkJCQkJJ3Njc3MnOmZhbHNlLAoJCQkJCQknanMnOmZhbHNlLAoJCQkJCQknanF1ZXJ5JzpmYWxzZSwKCQkJCQkJJ3BocCc6ZmFsc2UKCQkJCQl9OwoKCQkJCQlbXS5mb3JFYWNoLmNhbGwoZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgnLml0ZW0nKSwgKGUpPT57CgkJCQkJCWUuYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLCAoKT0+IHsKCQkJCQkJCWZvciAodmFyIGtleSBpbiBmaWxlQ2hvaWNlKSB7CgkJCQkJCQkJaWYgKGZpbGVDaG9pY2UuaGFzT3duUHJvcGVydHkoa2V5KSkgewoJCQkJCQkJCQlpZiAoa2V5ID09IGUuZGF0YXNldC50eXBlKSB7CgkJCQkJCQkJCQlmaWxlQ2hvaWNlW2tleV0gPSAhZmlsZUNob2ljZVtrZXldOwoJCQkJCQkJCQl9CgkJCQkJCQkJfQoJCQkJCQkJfQoKCQkJCQkJCWlmIChlLmNsYXNzTGlzdC5jb250YWlucygnc2VsZWN0ZWQnKSkgewoJCQkJCQkJCWUuY2xhc3NMaXN0LnJlbW92ZSgnc2VsZWN0ZWQnKTsKCQkJCQkJCQlpZiAoZS5jbGFzc0xpc3QuY29udGFpbnMoJ2pzJykpIHsKCQkJCQkJCQkJaWYgKGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJy5qcXVlcnknKS5jbGFzc0xpc3QuY29udGFpbnMoJ3NlbGVjdGVkJykpIHsKCQkJCQkJCQkJCWRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJy5qcXVlcnknKS5jbGFzc0xpc3QucmVtb3ZlKCdzZWxlY3RlZCcpOwoJCQkJCQkJCQkJZmlsZUNob2ljZVsnanF1ZXJ5J10gPSBmYWxzZTsKCQkJCQkJCQkJfQoJCQkJCQkJCX0KCQkJCQkJCQlpZiAoZS5jbGFzc0xpc3QuY29udGFpbnMoJ2NzcycpKSB7CgkJCQkJCQkJCWlmIChkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcuc2NzcycpLmNsYXNzTGlzdC5jb250YWlucygnc2VsZWN0ZWQnKSkgewoJCQkJCQkJCQkJZG9jdW1lbnQucXVlcnlTZWxlY3RvcignLnNjc3MnKS5jbGFzc0xpc3QucmVtb3ZlKCdzZWxlY3RlZCcpOwoJCQkJCQkJCQkJZmlsZUNob2ljZVsnc2NzcyddID0gZmFsc2U7CgkJCQkJCQkJCX0KCQkJCQkJCQl9CgkJCQkJCQl9IGVsc2UgewoJCQkJCQkJCWUuY2xhc3NMaXN0LmFkZCgnc2VsZWN0ZWQnKTsKCQkJCQkJCQlpZiAoZS5jbGFzc0xpc3QuY29udGFpbnMoJ3BocCcpKSB7CgkJCQkJCQkJCWRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJy5odG1sJykuY2xhc3NMaXN0LnJlbW92ZSgnc2VsZWN0ZWQnKTsKCQkJCQkJCQkJZmlsZUNob2ljZVsnaHRtbCddID0gZmFsc2U7CgkJCQkJCQkJfQoJCQkJCQkJCWlmIChlLmNsYXNzTGlzdC5jb250YWlucygnaHRtbCcpKSB7CgkJCQkJCQkJCWRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJy5waHAnKS5jbGFzc0xpc3QucmVtb3ZlKCdzZWxlY3RlZCcpOwoJCQkJCQkJCQlmaWxlQ2hvaWNlWydwaHAnXSA9IGZhbHNlOwoJCQkJCQkJCX0KCQkJCQkJCQlpZiAoZS5jbGFzc0xpc3QuY29udGFpbnMoJ3Njc3MnKSkgewoJCQkJCQkJCQlpZiAoIWRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJy5jc3MnKS5jbGFzc0xpc3QuY29udGFpbnMoJ3NlbGVjdGVkJykpIHsKCQkJCQkJCQkJCWRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJy5jc3MnKS5jbGFzc0xpc3QuYWRkKCdzZWxlY3RlZCcpOwoJCQkJCQkJCQkJZmlsZUNob2ljZVsnY3NzJ10gPSB0cnVlOwoJCQkJCQkJCQl9CgkJCQkJCQkJfQoJCQkJCQkJCWlmIChlLmNsYXNzTGlzdC5jb250YWlucygnanF1ZXJ5JykpIHsKCQkJCQkJCQkJaWYgKCFkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcuanMnKS5jbGFzc0xpc3QuY29udGFpbnMoJ3NlbGVjdGVkJykpIHsKCQkJCQkJCQkJCWRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJy5qcycpLmNsYXNzTGlzdC5hZGQoJ3NlbGVjdGVkJyk7CgkJCQkJCQkJCQlmaWxlQ2hvaWNlWydqcyddID0gdHJ1ZTsKCQkJCQkJCQkJfQoKCQkJCQkJCQl9CgkJCQkJCQl9CgkJCQkJCX0pOwoJCQkJCX0pOwoKCQkJCQlkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnbWFrZUJ0bicpLmFkZEV2ZW50TGlzdGVuZXIoJ2NsaWNrJywgKCk9PiB7CgoJCQkJCQlsZXQgY3NzU3RyaW5nID0gJyc7CgkJCQkJCWxldCBqc1N0cmluZyA9ICcnOwoJCQkJCQlsZXQganF1ZXJ5U3RyaW5nID0gJyc7CgkJCQkJCWxldCBwaHBTdHJpbmcgPSAnJzsKCgkJCQkJCWxldCBuYW1lZFRyaWdnZXIgPSAnJzsKCgkJCQkJCWlmIChmaWxlQ2hvaWNlLmNzcykgewoJCQkJCQkJd2luZG93LkJUVC5jYWxsSGFuZGxlcigndHJpZ2dlcl9uYW1lZCcsIHsKCQkJCQkJCQl0cmlnZ2VyX25hbWU6ICdtYWtlQ1NTJwoJCQkJCQkJfSwgZnVuY3Rpb24gY2FsbGJhY2socmVzcG9uc2UpIHsKCQkJCQkJCQljc3NTdHJpbmcgPSAnPGxpbmsgaHJlZj0iY3NzL21haW4uY3NzIiByZWw9InN0eWxlc2hlZXQiPic7CgoJCQkJCQkJCWlmIChmaWxlQ2hvaWNlLnNjc3MpIHsKCQkJCQkJCQkJd2luZG93LkJUVC5jYWxsSGFuZGxlcigndHJpZ2dlcl9uYW1lZCcsIHsKCQkJCQkJCQkJCXRyaWdnZXJfbmFtZTogJ21ha2VTQ1NTJwoJCQkJCQkJCQl9LCBmdW5jdGlvbiBjYWxsYmFjayhyZXNwb25zZSkgewoJCQkJCQkJCQkJY29uc29sZS5sb2coJ3Rlc3QnKTsKCQkJCQkJCQkJfSk7CgkJCQkJCQkJfQoJCQkJCQkJfSk7CgkJCQkJCX0KCgkJCQkJCWlmIChmaWxlQ2hvaWNlLmpzKSB7CgkJCQkJCQl3aW5kb3cuQlRULmNhbGxIYW5kbGVyKCd0cmlnZ2VyX25hbWVkJywgewoJCQkJCQkJCXRyaWdnZXJfbmFtZTogJ21ha2VKUycKCQkJCQkJCX0sIGZ1bmN0aW9uIGNhbGxiYWNrKHJlc3BvbnNlKSB7CgkJCQkJCQkJanNTdHJpbmcgPSAnPHNjcmlwdCBzcmM9ImpzL21haW4uanMiPjxcL3NjcmlwdD4nOwoKCQkJCQkJCQlpZiAoZmlsZUNob2ljZS5qcXVlcnkpIHsKCQkJCQkJCQkJanF1ZXJ5U3RyaW5nID0gJzxzY3JpcHQgc3JjPSJodHRwczovL2FqYXguZ29vZ2xlYXBpcy5jb20vYWpheC9saWJzL2pxdWVyeS8zLjQuMS9qcXVlcnkubWluLmpzIj48XC9zY3JpcHQ+JzsKCQkJCQkJCQl9CgkJCQkJCQl9KTsKCQkJCQkJfQoJCQkJCQlzZXRUaW1lb3V0KCgpPT4gewoJCQkJCQkJaWYgKGZpbGVDaG9pY2UucGhwKSB7CgkJCQkJCQkJbmFtZWRUcmlnZ2VyID0gJ21ha2VQSFAnOwoJCQkJCQkJCXBocFN0cmluZyA9ICc8P3BocFxuLy8gZWNobyAiUEhQIGluIGhlcmUiXG4_Pic7CgkJCQkJCQl9IGVsc2UgewoJCQkJCQkJCW5hbWVkVHJpZ2dlciA9ICdtYWtlSFRNTCc7CgkJCQkJCQl9CgkJCQkJCQlsZXQgZmluYWxTdHJpbmcgPSBwaHBTdHJpbmcgKyBgPCFET0NUWVBFIGh0bWw+CgkJCQkJCQk8aHRtbD4KCQkJCQkJCQk8aGVhZD4KCQkJCQkJCQkJPGxpbmsgaHJlZj0iaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3M_ZmFtaWx5PVJvYm90byZkaXNwbGF5PXN3YXAiIHJlbD0ic3R5bGVzaGVldCI+CgkJCQkJCQkJCWAgKyBjc3NTdHJpbmcgKyBgCgkJCQkJCQkJPC9oZWFkPgoJCQkJCQkJCTxib2R5PgoJCQkJCQkJCQlgICsganF1ZXJ5U3RyaW5nICsgYAoJCQkJCQkJCQlgICsganNTdHJpbmcgKyBgCgkJCQkJCQkJPC9ib2R5PgoJCQkJCQkJPC9odG1sPmA7CgkJCQkJCQkvLyBjb25zb2xlLmxvZyhmaW5hbFN0cmluZyk7CgkJCQkJCQlkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcuaXRlbXNDb250YWluZXInKS5pbm5lckhUTUwgPSAnJzsKCQkJCQkJCWRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJy5pdGVtc0NvbnRhaW5lcicpLmlubmVyVGV4dCA9IGZpbmFsU3RyaW5nCgkJCQkJCX0sIDEwMDApOwoJCQkJCX0pOwoJCQkJfSwgMCk7CgkJCX0KCgkJCWZ1bmN0aW9uIEJUVFdpbGxDbG9zZVdpbmRvdygpIHsKCQkJCS8vIHRoaXMgZnVuY3Rpb24gaXMgY2FsbGVkIGV2ZXJ5dGltZSB5b3UgY2xvc2UgdGhlIG1lbnUKCQkJCS8vIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJtZW51LW9wZW4iKS5jaGVja2VkID0gZmFsc2U7CgkJCX0KCQk8L3NjcmlwdD4KCQk8c3R5bGU+CgkJCSogewoJCQkJbWFyZ2luOiAwOwoJCQkJcGFkZGluZzogMDsKCQkJCWJveC1zaXppbmc6IGJvcmRlci1ib3g7CgkJCQlmb250LWZhbWlseTogJ1JvYm90bycsIHNhbnMtc2VyaWY7CgkJCX0KCQkJYm9keSB7CgkJCQliYWNrZ3JvdW5kOiBjbGVhcjsKCQkJCWJhY2tncm91bmQtY29sb3I6IGNsZWFyOwoJCQkJY29sb3I6IHdoaXRlOwoJCQkJZGlzcGxheTogZmxleDsKCQkJCWp1c3RpZnktY29udGVudDogY2VudGVyOwoJCQkJYWxpZ24taXRlbXM6IGNlbnRlcjsKCQkJfQoJCQkuYm94IHsKCQkJCWhlaWdodDogMzAwcHg7CgkJCQl3aWR0aDogMzAwcHg7CgkJCQlib3JkZXItcmFkaXVzOiA0OHB4OwoJCQkJLyogYm94LXNoYWRvdzogMCA4cHggMjBweCByZ2JhKDAsMCwwLDAuMjUpOyAqLwoJCQkJZGlzcGxheTogZmxleDsKCQkJCWp1c3RpZnktY29udGVudDogY2VudGVyOwoJCQkJYWxpZ24taXRlbXM6IGNlbnRlcjsKCQkJfQoJCQkuaXRlbXNDb250YWluZXIgewoJCQkJd2lkdGg6IDEwMCU7CgkJCQlkaXNwbGF5OiBmbGV4OwoJCQkJZmxleC13cmFwOiB3cmFwOwoJCQkJanVzdGlmeS1jb250ZW50OiBjZW50ZXI7CgkJCX0KCQkJLml0ZW0gewoJCQkJd2lkdGg6IDc1cHg7CgkJCQloZWlnaHQ6IDc1cHg7CgkJCQlib3JkZXI6IG5vbmU7CgkJCQlib3JkZXItcmFkaXVzOiA1MCU7CgkJCQliYWNrZ3JvdW5kLWNvbG9yOiAjZTUzOTM1OwoJCQkJZGlzcGxheTogZmxleDsKCQkJCWp1c3RpZnktY29udGVudDogY2VudGVyOwoJCQkJYWxpZ24taXRlbXM6IGNlbnRlcjsKCQkJCW1hcmdpbjogMTJweCAxMnB4OwoJCQkJY3Vyc29yOiBwb2ludGVyOwoJCQkJYm94LXNoYWRvdzogMCA4cHggMjBweCByZ2JhKDAsMCwwLDAuMSk7CgkJCQl0cmFuc2l0aW9uOiAwLjNzOwoJCQkJZm9udC1zaXplOiAxZW07CgkJCX0KCQkJLml0ZW06aG92ZXIsICNtYWtlQnRuOmhvdmVyIHsKCQkJCWJveC1zaGFkb3c6IDAgOHB4IDIwcHggcmdiYSgwLDAsMCwwLjUpOwoJCQl9CgkJCS5zZWxlY3RlZCB7CgkJCQliYWNrZ3JvdW5kLWNvbG9yOiAjN0NCMzQyOwoJCQl9CgkJCSNtYWtlQnRuIHsKCQkJCWZvbnQtc2l6ZTogMWVtOwoJCQkJY29sb3I6IHdoaXRlOwoJCQkJYm9yZGVyOiBub25lOwoJCQkJYmFja2dyb3VuZC1jb2xvcjogIzUxMkRBODsKCQkJCXBhZGRpbmc6IDEycHggMThweDsKCQkJCWJvcmRlci1yYWRpdXM6IDhweDsKCQkJCWN1cnNvcjogcG9pbnRlcjsKCQkJCWJveC1zaGFkb3c6IDAgOHB4IDIwcHggcmdiYSgwLDAsMCwwLjEpOwoJCQkJdHJhbnNpdGlvbjogMC4zczsKCQkJfQoJCTwvc3R5bGU+Cgk8L2hlYWQ+Cgk8Ym9keSBjbGFzcz0ibWVudSI+CgkJPGRpdiBjbGFzcz0iaXRlbXNDb250YWluZXIiPgoJCQk8YnV0dG9uIGNsYXNzPSJpdGVtIGh0bWwgc2VsZWN0ZWQiIGRhdGEtdHlwZT0iaHRtbCI+CgkJCQlIVE1MCgkJCTwvYnV0dG9uPgoJCQk8YnV0dG9uIGNsYXNzPSJpdGVtIGpzIiBkYXRhLXR5cGU9ImpzIj4KCQkJCUpTCgkJCTwvYnV0dG9uPgoJCQk8YnV0dG9uIGNsYXNzPSJpdGVtIGNzcyBzZWxlY3RlZCIgZGF0YS10eXBlPSJjc3MiPgoJCQkJQ1NTCgkJCTwvYnV0dG9uPgoJCQk8YnV0dG9uIGNsYXNzPSJpdGVtIHBocCIgZGF0YS10eXBlPSJwaHAiPgoJCQkJUEhQCgkJCTwvYnV0dG9uPgoJCQk8YnV0dG9uIGNsYXNzPSJpdGVtIGpxdWVyeSIgZGF0YS10eXBlPSJqcXVlcnkiPgoJCQkJalF1ZXJ5CgkJCTwvYnV0dG9uPgoJCQk8YnV0dG9uIGNsYXNzPSJpdGVtIHNjc3MiIGRhdGEtdHlwZT0ic2NzcyI+CgkJCQlTQ1NTCgkJCTwvYnV0dG9uPgoJCQk8YnV0dG9uIGlkPSJtYWtlQnRuIj5NYWtlPC9idXR0b24+CgkJPC9kaXY+Cgk8L2JvZHk+Cgo8L2h0bWw+",
               "BTTFileOther" : "html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier" : "com.apple.finder",
+      "BTTAppName" : "Finder",
+      "BTTAppAutoInvertIcon" : 1,
+      "BTTTriggers" : [
+
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier" : "BT.G",
+      "BTTAppName" : "Global",
+      "BTTAppAutoInvertIcon" : 1,
+      "BTTTriggers" : [
+        {
+          "BTTTriggerType" : 643,
+          "BTTTriggerTypeDescription" : "Named Trigger: makeHTML",
+          "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
+          "BTTPredefinedActionType" : 246,
+          "BTTPredefinedActionName" : "Execute Terminal Command (Synchronous, blocking)",
+          "BTTTerminalCommand" : "IFS=\ncode=`pbpaste`\nosascript -e 'tell application \"System Events\" to keystroke \"c\" using {control down, shift down}'\ncd \"`pbpaste`\"\necho $code > index.html",
+          "BTTTriggerName" : "makeHTML",
+          "BTTEnabled2" : 1,
+          "BTTAlternateModifierKeys" : 0,
+          "BTTUUID" : "6350F7B2-5B5F-4A43-9D7D-2B279B6CC81A",
+          "BTTNotesInsteadOfDescription" : 0,
+          "BTTEnabled" : 1,
+          "BTTModifierMode" : 0,
+          "BTTOrder" : 3,
+          "BTTDisplayOrder" : 0
+        },
+        {
+          "BTTTriggerType" : 643,
+          "BTTTriggerTypeDescription" : "Named Trigger: makePHP",
+          "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
+          "BTTPredefinedActionType" : 246,
+          "BTTPredefinedActionName" : "Execute Terminal Command (Synchronous, blocking)",
+          "BTTTerminalCommand" : "IFS=\ncode=`pbpaste`\nosascript -e 'tell application \"System Events\" to keystroke \"c\" using {control down, shift down}'\ncd \"`pbpaste`\"\necho $code > index.php",
+          "BTTTriggerName" : "makePHP",
+          "BTTEnabled2" : 1,
+          "BTTAlternateModifierKeys" : 0,
+          "BTTUUID" : "9BB1E83A-19C4-454E-89C4-D68882CCC59F",
+          "BTTNotesInsteadOfDescription" : 0,
+          "BTTEnabled" : 1,
+          "BTTModifierMode" : 0,
+          "BTTOrder" : 4,
+          "BTTDisplayOrder" : 0
+        },
+        {
+          "BTTTriggerType" : 643,
+          "BTTTriggerTypeDescription" : "Named Trigger: makeSCSS",
+          "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
+          "BTTPredefinedActionType" : 246,
+          "BTTPredefinedActionName" : "Execute Terminal Command (Synchronous, blocking)",
+          "BTTTerminalCommand" : "cd \"`pbpaste`\"\nmkdir scss\ncd scss\nprintf \"* {\n\tmargin: 0;\n\tpadding: 0;\n\tbox-sizing: border-box;\n\tfont-family: 'Roboto', sans-serif;\n}\" > main.scss",
+          "BTTTriggerName" : "makeSCSS",
+          "BTTEnabled2" : 1,
+          "BTTAlternateModifierKeys" : 0,
+          "BTTUUID" : "8BA7E08F-2CB2-490C-81A5-531A8DC93805",
+          "BTTNotesInsteadOfDescription" : 0,
+          "BTTEnabled" : 1,
+          "BTTModifierMode" : 0,
+          "BTTOrder" : 1,
+          "BTTDisplayOrder" : 0,
+          "BTTAdditionalActions" : [
+            {
+              "BTTTriggerType" : -1,
+              "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
+              "BTTPredefinedActionType" : 195,
+              "BTTPredefinedActionName" : "Run Apple Script (async in background)",
+              "BTTInlineAppleScript" : "return \"done\"",
+              "BTTEnabled2" : 1,
+              "BTTAlternateModifierKeys" : 0,
+              "BTTUUID" : "1B28A1D8-D6EE-4356-AF7E-0F20F394F971",
+              "BTTNotesInsteadOfDescription" : 0,
+              "BTTEnabled" : 1,
+              "BTTModifierMode" : 0,
+              "BTTOrder" : 0,
+              "BTTDisplayOrder" : 0
+            }
+          ]
+        },
+        {
+          "BTTTriggerType" : 643,
+          "BTTTriggerTypeDescription" : "Named Trigger: makeJS",
+          "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
+          "BTTPredefinedActionType" : 246,
+          "BTTPredefinedActionName" : "Execute Terminal Command (Synchronous, blocking)",
+          "BTTTerminalCommand" : "cd \"`pbpaste`\"\nmkdir js\ncd js\nprintf \"console.log('JS has loaded');\" > main.js",
+          "BTTTriggerName" : "makeJS",
+          "BTTEnabled2" : 1,
+          "BTTAlternateModifierKeys" : 0,
+          "BTTUUID" : "A22192D9-286C-47E7-856E-63C71A0A24B2",
+          "BTTNotesInsteadOfDescription" : 0,
+          "BTTEnabled" : 1,
+          "BTTModifierMode" : 0,
+          "BTTOrder" : 2,
+          "BTTDisplayOrder" : 0,
+          "BTTAdditionalActions" : [
+            {
+              "BTTTriggerType" : -1,
+              "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
+              "BTTPredefinedActionType" : 195,
+              "BTTPredefinedActionName" : "Run Apple Script (async in background)",
+              "BTTInlineAppleScript" : "return \"done\"",
+              "BTTEnabled2" : 1,
+              "BTTAlternateModifierKeys" : 0,
+              "BTTUUID" : "B463D126-9A4B-4592-BE88-C38D586DC644",
+              "BTTNotesInsteadOfDescription" : 0,
+              "BTTEnabled" : 1,
+              "BTTModifierMode" : 0,
+              "BTTOrder" : 0,
+              "BTTDisplayOrder" : 0
+            }
+          ]
+        },
+        {
+          "BTTTriggerType" : 643,
+          "BTTTriggerTypeDescription" : "Named Trigger: makeCSS",
+          "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
+          "BTTPredefinedActionType" : 246,
+          "BTTPredefinedActionName" : "Execute Terminal Command (Synchronous, blocking)",
+          "BTTTerminalCommand" : "cd \"`pbpaste`\"\nmkdir css\ncd css\nprintf \"* {\n\tmargin: 0;\n\tpadding: 0;\n\tbox-sizing: border-box;\n\tfont-family: 'Roboto', sans-serif;\n}\" > main.css",
+          "BTTTriggerName" : "makeCSS",
+          "BTTEnabled2" : 1,
+          "BTTAlternateModifierKeys" : 0,
+          "BTTUUID" : "F6A9ACB2-A325-4DD0-8685-B9F919B501B2",
+          "BTTNotesInsteadOfDescription" : 0,
+          "BTTEnabled" : 1,
+          "BTTModifierMode" : 0,
+          "BTTOrder" : 0,
+          "BTTDisplayOrder" : 0,
+          "BTTAdditionalActions" : [
+            {
+              "BTTTriggerType" : -1,
+              "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
+              "BTTPredefinedActionType" : 195,
+              "BTTPredefinedActionName" : "Run Apple Script (async in background)",
+              "BTTInlineAppleScript" : "return \"done\"",
+              "BTTEnabled2" : 1,
+              "BTTAlternateModifierKeys" : 0,
+              "BTTUUID" : "64DAB4DF-2A7D-49FC-BDAC-52B956822333",
+              "BTTNotesInsteadOfDescription" : 0,
+              "BTTEnabled" : 1,
+              "BTTModifierMode" : 0,
+              "BTTOrder" : 0,
+              "BTTDisplayOrder" : 0
             }
           ]
         }
